@@ -1,0 +1,1663 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Свадебное приглашение Дастана и Назимы — 03 сентября 2026 года"
+    />
+
+    <title>Дастан & Назима — Свадебное приглашение</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* =========================
+       RESET
+    ========================= */
+
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        -webkit-text-size-adjust: 100%;
+
+        background: #f7f3ea;
+      }
+
+      body {
+        width: 100%;
+        min-width: 280px;
+        min-height: 100vh;
+
+        font-family: "Montserrat", sans-serif;
+
+        background: #f7f3ea;
+        color: #5f514d;
+
+        overflow-x: hidden;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+      a {
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      /* =========================
+       CONTAINER
+    ========================= */
+
+      .container {
+        width: min(calc(100% - 32px), 1100px);
+
+        margin-inline: auto;
+      }
+
+      /* =========================
+       HERO
+    ========================= */
+
+      .hero {
+        position: relative;
+
+        width: 100%;
+
+        min-height: 100vh;
+        min-height: 100svh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: max(30px, env(safe-area-inset-top)) 16px
+          max(30px, env(safe-area-inset-bottom));
+
+        text-align: center;
+
+        background: #f7f3ea;
+
+        overflow: hidden;
+      }
+
+      .hero::before,
+      .hero::after {
+        position: absolute;
+
+        font-size: clamp(100px, 35vw, 250px);
+
+        color: rgba(166, 105, 110, 0.08);
+
+        pointer-events: none;
+
+        animation: floating 7s ease-in-out infinite;
+      }
+
+      .hero::before {
+        content: "✿";
+
+        top: -45px;
+        left: -45px;
+      }
+
+      .hero::after {
+        content: "❀";
+
+        right: -50px;
+        bottom: -55px;
+
+        animation-delay: 2s;
+      }
+
+      @keyframes floating {
+        0%,
+        100% {
+          transform: translateY(0) rotate(0deg);
+        }
+
+        50% {
+          transform: translateY(-15px) rotate(7deg);
+        }
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 2;
+
+        width: 100%;
+        max-width: 800px;
+
+        animation: heroFade 1.4s ease forwards;
+      }
+
+      @keyframes heroFade {
+        from {
+          opacity: 0;
+
+          transform: translateY(30px);
+        }
+
+        to {
+          opacity: 1;
+
+          transform: translateY(0);
+        }
+      }
+
+      .small-text {
+        margin-bottom: clamp(18px, 5vw, 30px);
+
+        font-size: clamp(9px, 2.8vw, 13px);
+
+        font-weight: 400;
+
+        line-height: 1.5;
+
+        text-transform: uppercase;
+
+        letter-spacing: clamp(2px, 1vw, 6px);
+
+        color: #9c7778;
+      }
+
+      .names {
+        max-width: 100%;
+
+        font-family: "Great Vibes", cursive;
+
+        font-size: clamp(48px, 15vw, 120px);
+
+        font-weight: 400;
+
+        line-height: 1.05;
+
+        color: #986b6d;
+
+        overflow-wrap: break-word;
+      }
+
+      .heart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: clamp(15px, 4vw, 25px) 0;
+
+        font-size: clamp(22px, 6vw, 32px);
+
+        color: #c98f92;
+
+        animation: heartbeat 1.6s ease-in-out infinite;
+      }
+
+      @keyframes heartbeat {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+
+        50% {
+          transform: scale(1.2);
+        }
+      }
+
+      .date {
+        margin-bottom: 16px;
+
+        font-family: "Cormorant Garamond", serif;
+
+        font-size: clamp(27px, 8vw, 50px);
+
+        font-weight: 500;
+
+        line-height: 1.2;
+
+        color: #6f5954;
+      }
+
+      .hero-description {
+        width: min(100%, 580px);
+
+        margin-inline: auto;
+
+        padding-inline: 5px;
+
+        font-family: "Cormorant Garamond", serif;
+
+        font-size: clamp(18px, 5vw, 25px);
+
+        line-height: 1.55;
+
+        color: #806d67;
+      }
+
+      /* =========================
+       GENERAL SECTIONS
+    ========================= */
+
+      section {
+        width: 100%;
+        padding: clamp(42px, 7vw, 72px) 0;
+        background: #f7f3ea;
+      }
+
+      .section-title {
+        margin-bottom: clamp(25px, 6vw, 40px);
+
+        font-family: "Cormorant Garamond", serif;
+
+        font-size: clamp(34px, 9vw, 60px);
+
+        font-weight: 600;
+
+        line-height: 1.1;
+
+        text-align: center;
+
+        color: #8d6868;
+      }
+
+      /* =========================
+       INVITATION
+    ========================= */
+
+      .invitation {
+        padding: clamp(45px, 7vw, 75px) 0;
+        background: #f7f3ea;
+        text-align: center;
+      }
+
+      .invitation-content {
+        width: min(100%, 760px);
+
+        margin-inline: auto;
+      }
+
+      .invitation-text {
+        font-family: "Cormorant Garamond", serif;
+
+        font-size: clamp(19px, 5vw, 25px);
+
+        line-height: 1.75;
+
+        color: #6e5c57;
+      }
+
+      .signature {
+        margin-top: clamp(28px, 7vw, 45px);
+
+        font-family: "Great Vibes", cursive;
+
+        font-size: clamp(38px, 11vw, 58px);
+
+        line-height: 1.2;
+
+        color: #a57476;
+      }
+
+      /* =========================
+       DIVIDER
+    ========================= */
+
+      .divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 12px;
+
+        margin: clamp(25px, 6vw, 40px) auto;
+
+        color: #c69799;
+      }
+
+      .divider::before,
+      .divider::after {
+        content: "";
+
+        width: min(18vw, 80px);
+
+        height: 1px;
+
+        background: rgba(166, 112, 115, 0.35);
+      }
+
+      /* =========================
+       COUNTDOWN
+    ========================= */
+
+      .countdown-section {
+        padding: clamp(40px, 6vw, 70px) 0;
+        background: #f7f3ea;
+        text-align: center;
+      }
+
+      .countdown {
+        width: min(100%, 700px);
+
+        margin: clamp(30px, 7vw, 50px) auto 0;
+
+        display: grid;
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 10px;
+      }
+
+      .time-box {
+        min-width: 0;
+
+        padding: clamp(18px, 5vw, 28px) 8px;
+
+        background: rgba(255, 255, 255, 0.45);
+
+        border: 1px solid rgba(177, 125, 128, 0.22);
+
+        border-radius: clamp(18px, 5vw, 28px);
+
+        box-shadow: 0 15px 35px rgba(130, 90, 90, 0.08);
+
+        backdrop-filter: blur(8px);
+
+        -webkit-backdrop-filter: blur(8px);
+      }
+
+      .time-box span {
+        display: block;
+
+        font-family: "Cormorant Garamond", serif;
+
+        font-size: clamp(34px, 11vw, 55px);
+
+        font-weight: 600;
+
+        line-height: 1;
+
+        color: #9d7072;
+      }
+
+      .time-box small {
+        display: block;
+
+        margin-top: 8px;
+
+        font-size: clamp(8px, 2.5vw, 11px);
+
+        text-transform: uppercase;
+
+        letter-spacing: clamp(1px, 0.7vw, 2px);
+
+        color: #967f79;
+      }
+
+      /* =========================
+       LOCATION
+    ========================= */
+
+      .location {
+        width: 100%;
+
+        padding: clamp(45px, 7vw, 75px) 0;
+
+        background: #f7f3ea;
+
+        text-align: center;
+      }
+
+      .location-label {
+        margin-bottom: 18px;
+
+        font-family: "Montserrat", sans-serif;
+
+        font-size: clamp(10px, 2.5vw, 13px);
+
+        font-weight: 500;
+
+        letter-spacing: 6px;
+
+        color: #bd8547;
+      }
+
+      .location-title {
+        margin-bottom: clamp(35px, 8vw, 60px);
+
+        font-family: "Cormorant Garamond", serif;
+
+        font-size: clamp(40px, 10vw, 64px);
+
+        font-weight: 400;
+
+        line-height: 1.1;
+
+        color: #302b29;
+      }
+
+      /* LOCATION CARD */
+
+      .location-card {
+        width: min(100%, 850px);
+
+        margin-inline: auto;
+
+        padding: 0;
+
+        overflow: hidden;
+
+        border: 1px solid rgba(189, 133, 71, 0.28);
+
+        border-radius: clamp(20px, 5vw, 30px);
+
+        background: #fbf8f1;
+
+        box-shadow: 0 18px 50px rgba(77, 62, 48, 0.05);
+      }
+
+      /* MAP */
+
+      .map-wrapper {
+        position: relative;
+
+        width: 100%;
+
+        height: clamp(250px, 48vw, 400px);
+
+        overflow: hidden;
+
+        background: #e8e3d9;
+      }
+
+      .map-wrapper iframe {
+        display: block;
+
+        width: 100%;
+        height: 100%;
+
+        border: 0;
+      }
+
+      /* LOCATION INFO */
+
+      .location-info {
+        padding: clamp(28px, 6vw, 45px) clamp(20px, 6vw, 45px);
+      }
+
+      .location-info h3 {
+        margin: 0 0 12px;
+
+        font-family: "Cormorant Garamond", serif;
+
+        font-size: clamp(27px, 7vw, 42px);
+
+        font-weight: 400;
+
+        line-height: 1.2;
+
+        text-align: left;
+
+        color: #302b29;
+      }
+
+      .location-address {
+        margin-bottom: clamp(25px, 6vw, 35px);
+
+        font-family: "Cormorant Garamond", serif;
+
+        font-size: clamp(17px, 4vw, 21px);
+
+        line-height: 1.5;
+
+        text-align: left;
+
+        color: #a28e83;
+      }
+
+      /* MAP BUTTON */
+
+      .map-button {
+        width: 100%;
+        min-height: 62px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 15px 20px;
+
+        border: 1px solid #bd8547;
+
+        border-radius: 16px;
+
+        background: transparent;
+
+        font-family: "Montserrat", sans-serif;
+
+        font-size: clamp(12px, 3vw, 16px);
+
+        font-weight: 400;
+
+        letter-spacing: 1.5px;
+
+        color: #bd8547;
+
+        text-decoration: none;
+
+        transition:
+          background 0.3s ease,
+          color 0.3s ease,
+          transform 0.3s ease;
+      }
+
+      .map-button:hover {
+        background: #bd8547;
+
+        color: #ffffff;
+
+        transform: translateY(-2px);
+      }
+
+      /* =========================
+       RSVP / АНКЕТА ГОСТЯ
+    ========================= */
+
+      .rsvp {
+        padding: clamp(42px, 7vw, 72px) 0;
+        background: #f7f3ea;
+        text-align: center;
+      }
+
+      .rsvp-label {
+        margin-bottom: 18px;
+        font-size: clamp(10px, 2.5vw, 13px);
+        font-weight: 500;
+        letter-spacing: 6px;
+        color: #bd8547;
+      }
+
+      .rsvp-title {
+        margin-bottom: 14px;
+        font-family: "Cormorant Garamond", serif;
+        font-size: clamp(38px, 9vw, 62px);
+        font-weight: 400;
+        line-height: 1.1;
+        color: #3f3732;
+      }
+
+      .rsvp-subtitle {
+        margin-bottom: clamp(28px, 6vw, 44px);
+        font-family: "Cormorant Garamond", serif;
+        font-size: clamp(18px, 4.5vw, 23px);
+        color: #a28e83;
+      }
+
+      .rsvp-card {
+        width: min(100%, 720px);
+        margin-inline: auto;
+        padding: clamp(24px, 6vw, 42px);
+        border: 1px solid rgba(189, 133, 71, 0.28);
+        border-radius: clamp(20px, 5vw, 30px);
+        background: rgba(255, 255, 255, 0.45);
+        text-align: left;
+        box-shadow: 0 18px 50px rgba(77, 62, 48, 0.05);
+      }
+
+      .rsvp-group {
+        margin-bottom: 28px;
+      }
+
+      .rsvp-field-label,
+      .rsvp-group-title {
+        display: block;
+        margin-bottom: 12px;
+        font-size: clamp(13px, 3vw, 16px);
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        color: #806d67;
+      }
+
+      .rsvp-input {
+        width: 100%;
+        min-height: 64px;
+        padding: 16px 20px;
+        border: 1px solid rgba(189, 133, 71, 0.32);
+        border-radius: 16px;
+        outline: none;
+        background: rgba(255, 255, 255, 0.75);
+        font-family: "Cormorant Garamond", serif;
+        font-size: clamp(18px, 4vw, 22px);
+        color: #5f514d;
+      }
+
+      .rsvp-input::placeholder {
+        color: #b7a399;
+      }
+
+      .rsvp-input:focus {
+        border-color: #bd8547;
+        box-shadow: 0 0 0 3px rgba(189, 133, 71, 0.1);
+      }
+
+      .rsvp-options {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .rsvp-option {
+        position: relative;
+        cursor: pointer;
+      }
+
+      .rsvp-option input {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      .rsvp-option span {
+        min-height: 68px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px;
+        border: 1px solid rgba(189, 133, 71, 0.32);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.65);
+        font-family: "Cormorant Garamond", serif;
+        font-size: clamp(16px, 3.5vw, 20px);
+        line-height: 1.25;
+        text-align: center;
+        color: #806d67;
+        transition: 0.25s ease;
+      }
+
+      .rsvp-option input:checked + span {
+        border-color: #bd8547;
+        background: #bd8547;
+        color: #ffffff;
+      }
+
+      .rsvp-divider {
+        height: 1px;
+        margin: 30px 0;
+        background: rgba(189, 133, 71, 0.2);
+      }
+
+      .rsvp-submit {
+        width: 100%;
+        min-height: 64px;
+        margin-top: 4px;
+        border: 1px solid #b89258;
+        border-radius: 16px;
+        background: #b89258;
+        font-family: "Montserrat", sans-serif;
+        font-size: clamp(13px, 3vw, 17px);
+        letter-spacing: 1.5px;
+        color: #ffffff;
+        cursor: pointer;
+        transition:
+          transform 0.25s ease,
+          opacity 0.25s ease;
+      }
+
+      .rsvp-submit:hover {
+        transform: translateY(-2px);
+      }
+
+      .rsvp-submit:disabled {
+        opacity: 0.65;
+        cursor: wait;
+        transform: none;
+      }
+
+      .rsvp-message {
+        display: none;
+        margin-top: 20px;
+        padding: 16px;
+        border-radius: 14px;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 20px;
+        line-height: 1.4;
+        text-align: center;
+      }
+
+      .rsvp-message.success {
+        display: block;
+        background: rgba(113, 151, 111, 0.12);
+        color: #657b62;
+      }
+
+      @media (max-width: 600px) {
+        .rsvp {
+          padding: 38px 0;
+        }
+
+        .rsvp .container {
+          width: min(calc(100% - 28px), 1100px);
+        }
+
+        .rsvp-card {
+          padding: 24px 18px;
+          border-radius: 22px;
+        }
+
+        .rsvp-options {
+          grid-template-columns: 1fr;
+          gap: 10px;
+        }
+
+        .rsvp-option span {
+          min-height: 60px;
+        }
+
+        .rsvp-input,
+        .rsvp-submit {
+          min-height: 58px;
+        }
+      }
+
+      /* =========================
+       FOOTER
+    ========================= */
+
+      footer {
+        position: relative;
+
+        width: 100%;
+
+        padding: clamp(45px, 8vw, 75px) 16px;
+
+        text-align: center;
+
+        background: #f7f3ea;
+
+        overflow: hidden;
+      }
+
+      footer::before,
+      footer::after {
+        position: absolute;
+
+        font-size: clamp(90px, 30vw, 220px);
+
+        color: rgba(142, 101, 103, 0.07);
+
+        pointer-events: none;
+      }
+
+      footer::before {
+        content: "✿";
+
+        top: -40px;
+        left: -35px;
+      }
+
+      footer::after {
+        content: "❀";
+
+        right: -40px;
+        bottom: -60px;
+      }
+
+      .footer-content {
+        position: relative;
+        z-index: 2;
+
+        width: min(100%, 700px);
+
+        margin-inline: auto;
+      }
+
+      .footer-names {
+        margin-bottom: 15px;
+
+        font-family: "Great Vibes", cursive;
+
+        font-size: clamp(42px, 13vw, 70px);
+
+        line-height: 1.2;
+
+        color: #8e6567;
+      }
+
+      .footer-text {
+        font-family: "Cormorant Garamond", serif;
+
+        font-size: clamp(18px, 5vw, 23px);
+
+        line-height: 1.5;
+
+        color: #705c57;
+      }
+
+      /* =========================
+       RESPECTFULLY
+    ========================= */
+
+      .respectfully {
+        margin-top: clamp(35px, 8vw, 55px);
+
+        padding-top: clamp(25px, 6vw, 35px);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 8px;
+
+        border-top: 1px solid rgba(142, 101, 103, 0.2);
+      }
+
+      .respectfully span {
+        font-family: "Cormorant Garamond", serif;
+
+        font-size: clamp(17px, 4.5vw, 22px);
+
+        font-style: italic;
+
+        color: #806d67;
+      }
+
+      .respectfully strong {
+        font-family: "Great Vibes", cursive;
+
+        font-size: clamp(38px, 11vw, 58px);
+
+        font-weight: 400;
+
+        line-height: 1.2;
+
+        color: #8e6567;
+      }
+
+      /* =========================
+       SCROLL ANIMATION
+    ========================= */
+
+      .reveal {
+        opacity: 0;
+
+        transform: translateY(35px);
+
+        transition:
+          opacity 0.9s ease,
+          transform 0.9s ease;
+      }
+
+      .reveal.active {
+        opacity: 1;
+
+        transform: translateY(0);
+      }
+
+      /* =========================
+       VERY SMALL MOBILE
+       280px - 359px
+    ========================= */
+
+      @media (max-width: 359px) {
+        section {
+          padding: 30px 0;
+        }
+
+        .invitation {
+          padding: 34px 0;
+        }
+
+        .countdown-section {
+          padding: 32px 0;
+        }
+
+        .location {
+          padding: 34px 0;
+        }
+
+        footer {
+          padding: 38px 12px;
+        }
+
+        .container {
+          width: min(calc(100% - 20px), 1100px);
+        }
+
+        .hero {
+          padding-inline: 12px;
+        }
+
+        .names {
+          font-size: 45px;
+        }
+
+        .date {
+          font-size: 25px;
+        }
+
+        .hero-description {
+          font-size: 17px;
+        }
+
+        .countdown {
+          gap: 8px;
+        }
+
+        .time-box {
+          padding: 17px 5px;
+        }
+
+        .time-box span {
+          font-size: 33px;
+        }
+
+        .time-box small {
+          font-size: 8px;
+
+          letter-spacing: 0.8px;
+        }
+
+        .location-label {
+          font-size: 9px;
+
+          letter-spacing: 4px;
+        }
+
+        .location-title {
+          font-size: 38px;
+        }
+
+        .location-card {
+          border-radius: 18px;
+        }
+
+        .map-wrapper {
+          height: 220px;
+        }
+
+        .location-info {
+          padding: 23px 16px 25px;
+        }
+
+        .location-info h3 {
+          font-size: 25px;
+        }
+
+        .location-address {
+          font-size: 16px;
+        }
+
+        .map-button {
+          min-height: 54px;
+
+          padding: 12px 10px;
+
+          font-size: 11px;
+
+          letter-spacing: 0.8px;
+        }
+
+        .respectfully strong {
+          font-size: 36px;
+        }
+      }
+
+      /* =========================
+       MOBILE 360px+
+    ========================= */
+
+      @media (min-width: 360px) {
+        .container {
+          width: min(calc(100% - 36px), 1100px);
+        }
+
+        .countdown {
+          gap: 12px;
+        }
+      }
+
+      /* =========================
+       TABLET COMPACT SPACING
+    ========================= */
+
+      @media (max-width: 768px) {
+        section {
+          padding: clamp(36px, 7vw, 55px) 0;
+        }
+
+        .invitation {
+          padding: 42px 0;
+        }
+
+        .countdown-section {
+          padding: 38px 0;
+        }
+
+        .location {
+          padding: 42px 0;
+        }
+
+        footer {
+          padding: 45px 16px;
+        }
+      }
+
+      /* =========================
+       MOBILE LOCATION
+    ========================= */
+
+      @media (max-width: 600px) {
+        section {
+          padding: 34px 0;
+        }
+
+        .invitation {
+          padding: 38px 0;
+        }
+
+        .countdown-section {
+          padding: 36px 0;
+        }
+
+        .location {
+          padding: 38px 0;
+        }
+
+        footer {
+          padding: 42px 16px;
+        }
+
+        .location .container {
+          width: min(calc(100% - 28px), 1100px);
+        }
+
+        .location-label {
+          margin-bottom: 15px;
+
+          font-size: 10px;
+
+          letter-spacing: 5px;
+        }
+
+        .location-title {
+          margin-bottom: 35px;
+
+          font-size: clamp(40px, 12vw, 52px);
+        }
+
+        .location-card {
+          border-radius: 22px;
+        }
+
+        .map-wrapper {
+          height: 250px;
+        }
+
+        .location-info {
+          padding: 26px 20px 28px;
+        }
+
+        .location-info h3 {
+          font-size: 28px;
+        }
+
+        .location-address {
+          margin-bottom: 25px;
+
+          font-size: 17px;
+        }
+
+        .map-button {
+          min-height: 58px;
+
+          border-radius: 14px;
+
+          font-size: 13px;
+
+          letter-spacing: 1px;
+        }
+      }
+
+      /* =========================
+       LARGE MOBILE 480px+
+    ========================= */
+
+      @media (min-width: 480px) {
+        .container {
+          width: min(calc(100% - 48px), 1100px);
+        }
+
+        .countdown {
+          gap: 15px;
+        }
+
+        .time-box {
+          padding: 25px 10px;
+        }
+      }
+
+      /* =========================
+       TABLET 768px+
+    ========================= */
+
+      @media (min-width: 768px) {
+        .container {
+          width: min(calc(100% - 64px), 1100px);
+        }
+
+        .countdown {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+
+          gap: 16px;
+        }
+
+        .hero-description {
+          line-height: 1.65;
+        }
+      }
+
+      /* =========================
+       DESKTOP 1024px+
+    ========================= */
+
+      @media (min-width: 1024px) {
+        .hero {
+          padding-inline: 40px;
+        }
+
+        .time-box {
+          transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+        }
+
+        .time-box:hover {
+          transform: translateY(-6px);
+
+          box-shadow: 0 20px 45px rgba(130, 90, 90, 0.13);
+        }
+
+        .location-card {
+          transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+        }
+
+        .location-card:hover {
+          transform: translateY(-4px);
+
+          box-shadow: 0 22px 60px rgba(77, 62, 48, 0.08);
+        }
+      }
+
+      /* =========================
+       LANDSCAPE PHONE
+    ========================= */
+
+      @media (max-height: 500px) and (orientation: landscape) {
+        .hero {
+          min-height: 650px;
+
+          padding-top: 40px;
+          padding-bottom: 40px;
+        }
+
+        .names {
+          font-size: 60px;
+        }
+      }
+
+      /* =========================
+       REDUCED MOTION
+    ========================= */
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+
+          animation-iteration-count: 1 !important;
+
+          transition-duration: 0.01ms !important;
+        }
+
+        .reveal {
+          opacity: 1;
+
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- =========================
+       HERO
+  ========================== -->
+
+    <section class="hero">
+      <div class="hero-content">
+        <p class="small-text">Свадебное приглашение</p>
+
+        <h1 class="names">Дастан & Назима</h1>
+
+        <div class="heart">♡</div>
+
+        <div class="date">03 сентября 2026</div>
+
+        <p class="hero-description">
+          Мы будем счастливы разделить этот особенный день вместе с вами
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================
+       INVITATION
+  ========================== -->
+
+    <section class="invitation">
+      <div class="container">
+        <div class="invitation-content reveal">
+          <h2 class="section-title">Дорогие гости!</h2>
+
+          <div class="divider">♡</div>
+
+          <p class="invitation-text">
+            В нашей жизни наступает особенный и счастливый момент.
+
+            <br /><br />
+
+            Мы создаём семью и от всего сердца приглашаем вас разделить с нами
+            радость этого прекрасного дня.
+
+            <br /><br />
+
+            Ваше присутствие станет для нас самым тёплым и дорогим подарком.
+          </p>
+
+          <div class="signature">Дастан & Назима</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+       COUNTDOWN
+  ========================== -->
+
+    <section class="countdown-section">
+      <div class="container reveal">
+        <h2 class="section-title">До торжества осталось</h2>
+
+        <div class="divider">♡</div>
+
+        <div class="countdown">
+          <div class="time-box">
+            <span id="days"> 00 </span>
+
+            <small> Дней </small>
+          </div>
+
+          <div class="time-box">
+            <span id="hours"> 00 </span>
+
+            <small> Часов </small>
+          </div>
+
+          <div class="time-box">
+            <span id="minutes"> 00 </span>
+
+            <small> Минут </small>
+          </div>
+
+          <div class="time-box">
+            <span id="seconds"> 00 </span>
+
+            <small> Секунд </small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+       LOCATION
+  ========================== -->
+
+    <section class="location">
+      <div class="container reveal">
+        <p class="location-label">ЛОКАЦИЯ</p>
+
+        <h2 class="location-title">Как добраться</h2>
+
+        <div class="location-card">
+          <!-- КАРТА -->
+          <!-- КАРТА -->
+          <div class="map-wrapper">
+            <iframe
+              src="https://www.google.com/maps?q=42.8619598,74.6906217&z=17&output=embed"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Карта PRESIDENT CITY HALL"
+            ></iframe>
+          </div>
+
+          <!-- ИНФОРМАЦИЯ -->
+          <div class="location-info">
+            <h3>Банкетный зал «President city hall »</h3>
+
+            <p class="location-address">г. Бишкек · начало в 16:00</p>
+
+            <a
+              href="https://2gis.kg/bishkek/firm/70000001033577160"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="map-button"
+            >
+              ОТКРЫТЬ НА КАРТЕ
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+       RSVP / АНКЕТА ГОСТЯ
+  ========================== -->
+
+    <section class="rsvp">
+      <div class="container reveal">
+        <p class="rsvp-label">АНКЕТА ГОСТЯ</p>
+
+        <h2 class="rsvp-title">Подтвердите присутствие</h2>
+
+        <p class="rsvp-subtitle">Пожалуйста, ответьте до 25 августа</p>
+
+        <div class="rsvp-card">
+          <form
+            id="rsvpForm"
+            action="https://docs.google.com/forms/d/e/1FAIpQLSclNqg6QNNo1rrzluH-M3WeuJndT9utk3TZrk-xKqLxZ7fUuQ/formResponse"
+            method="POST"
+            target="rsvpHiddenFrame"
+          >
+            <div class="rsvp-group">
+              <label class="rsvp-field-label" for="guestName"> ВАШЕ ФИО </label>
+
+              <input
+                class="rsvp-input"
+                id="guestName"
+                name="entry.814359855"
+                type="text"
+                placeholder="Иванов Иван Иванович"
+                autocomplete="name"
+                required
+              />
+            </div>
+
+            <div class="rsvp-group">
+              <p class="rsvp-group-title">СМОЖЕТЕ ПРИЙТИ?</p>
+
+              <div class="rsvp-options">
+                <label class="rsvp-option">
+                  <input
+                    type="radio"
+                    name="entry.1761754154"
+                    value="Да, приду с радостью"
+                    required
+                  />
+                  <span>Да, приду с радостью</span>
+                </label>
+
+                <label class="rsvp-option">
+                  <input
+                    type="radio"
+                    name="entry.1761754154"
+                    value="К сожалению, нет"
+                    required
+                  />
+                  <span>К сожалению, нет</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="rsvp-divider"></div>
+
+            <div class="rsvp-group">
+              <p class="rsvp-group-title">БУДЕТЕ СО СПУТНИКОМ (+1)?</p>
+
+              <div class="rsvp-options">
+                <label class="rsvp-option">
+                  <input
+                    type="radio"
+                    name="entry.1852945173"
+                    value="Да"
+                    required
+                  />
+                  <span>Да</span>
+                </label>
+
+                <label class="rsvp-option">
+                  <input
+                    type="radio"
+                    name="entry.1852945173"
+                    value="Нет"
+                    required
+                  />
+                  <span>Нет</span>
+                </label>
+              </div>
+            </div>
+
+            <button class="rsvp-submit" id="rsvpSubmit" type="submit">
+              ОТПРАВИТЬ ОТВЕТ
+            </button>
+
+            <div
+              class="rsvp-message"
+              id="rsvpMessage"
+              role="status"
+              aria-live="polite"
+            ></div>
+          </form>
+
+          <iframe
+            id="rsvpHiddenFrame"
+            name="rsvpHiddenFrame"
+            title="Отправка анкеты"
+            style="display: none"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+       FOOTER
+  ========================== -->
+
+    <footer>
+      <div class="footer-content reveal">
+        <div class="footer-names">Дастан & Назима</div>
+
+        <p class="footer-text">
+          С любовью ждём вас
+          <br />
+          на нашем празднике ♡
+        </p>
+
+        <div class="respectfully">
+          <span> С уважением, </span>
+
+          <strong> Азамат & Уулгелди </strong>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+
+    <script>
+      /* =========================
+       COUNTDOWN
+    ========================= */
+
+      const weddingDate = new Date("2026-09-03T16:00:00+06:00").getTime();
+
+      const daysElement = document.getElementById("days");
+
+      const hoursElement = document.getElementById("hours");
+
+      const minutesElement = document.getElementById("minutes");
+
+      const secondsElement = document.getElementById("seconds");
+
+      const countdownElement = document.querySelector(".countdown");
+
+      function updateCountdown() {
+        const now = new Date().getTime();
+
+        const distance = weddingDate - now;
+
+        if (distance <= 0) {
+          countdownElement.innerHTML = `
+          <div
+            style="
+              grid-column: 1 / -1;
+              font-family:
+                'Cormorant Garamond',
+                serif;
+              font-size:
+                clamp(
+                  28px,
+                  7vw,
+                  45px
+                );
+              color: #9d7072;
+            "
+          >
+            Сегодня наш особенный день ♡
+          </div>
+        `;
+
+          return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+        );
+
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        daysElement.textContent = String(days).padStart(2, "0");
+
+        hoursElement.textContent = String(hours).padStart(2, "0");
+
+        minutesElement.textContent = String(minutes).padStart(2, "0");
+
+        secondsElement.textContent = String(seconds).padStart(2, "0");
+      }
+
+      updateCountdown();
+
+      setInterval(updateCountdown, 1000);
+
+      /* =========================
+       RSVP -> GOOGLE FORMS
+    ========================= */
+
+      const rsvpForm = document.getElementById("rsvpForm");
+      const rsvpSubmit = document.getElementById("rsvpSubmit");
+      const rsvpMessage = document.getElementById("rsvpMessage");
+      const rsvpHiddenFrame = document.getElementById("rsvpHiddenFrame");
+
+      let rsvpSubmitted = false;
+
+      rsvpForm.addEventListener("submit", () => {
+        rsvpSubmitted = true;
+
+        rsvpSubmit.disabled = true;
+        rsvpSubmit.textContent = "ОТПРАВЛЯЕМ...";
+
+        rsvpMessage.className = "rsvp-message";
+        rsvpMessage.textContent = "";
+      });
+
+      rsvpHiddenFrame.addEventListener("load", () => {
+        if (!rsvpSubmitted) {
+          return;
+        }
+
+        rsvpSubmitted = false;
+
+        rsvpMessage.className = "rsvp-message success";
+        rsvpMessage.textContent = "Спасибо! Ваш ответ отправлен ♡";
+
+        rsvpForm.reset();
+
+        rsvpSubmit.disabled = false;
+        rsvpSubmit.textContent = "ОТПРАВИТЬ ОТВЕТ";
+      });
+
+      /* =========================
+       SCROLL REVEAL
+    ========================= */
+
+      const revealElements = document.querySelectorAll(".reveal");
+
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver(
+          (entries, observerInstance) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+
+                observerInstance.unobserve(entry.target);
+              }
+            });
+          },
+
+          {
+            threshold: 0.12,
+
+            rootMargin: "0px 0px -40px 0px",
+          },
+        );
+
+        revealElements.forEach((element) => {
+          observer.observe(element);
+        });
+      } else {
+        revealElements.forEach((element) => {
+          element.classList.add("active");
+        });
+      }
+    </script>
+  </body>
+</html>
