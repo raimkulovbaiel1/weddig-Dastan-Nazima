@@ -302,6 +302,14 @@
 
         color: #6e5c57;
       }
+      .logo {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        display: block;
+        margin: 30px auto 0;
+        border-radius: 16px; /* аккуратное скругление */
+      }
 
       .signature {
         margin-top: clamp(28px, 7vw, 45px);
@@ -1248,10 +1256,77 @@
           transform: none;
         }
       }
+
+      #intro-screen {
+        position: fixed;
+        inset: 0;
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+          url("./assets/img1.png") center/cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 99999;
+        transition: opacity 0.9s ease;
+      }
+      #intro-screen.hide {
+        opacity: 0;
+        pointer-events: none;
+      }
+      .intro-content {
+        text-align: center;
+        color: #fff;
+        padding: 20px;
+      }
+      .intro-content h1 {
+        font-family: "Great Vibes", cursive;
+        font-size: clamp(42px, 8vw, 70px);
+      }
+      .intro-content p {
+        font-size: 22px;
+        line-height: 1.6;
+        margin: 20px 0;
+      }
+      .intro-btn {
+        padding: 16px 36px;
+        border-radius: 50px;
+        border: 2px solid #fff;
+        background: transparent;
+        color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      .petal {
+        position: absolute;
+        font-size: 22px;
+        animation: fall 10s linear forwards;
+      }
+      @keyframes fall {
+        from {
+          transform: translateY(-80px);
+        }
+        to {
+          transform: translateY(110vh) rotate(720deg);
+          opacity: 0;
+        }
+      }
     </style>
   </head>
 
   <body>
+    <div id="intro-screen">
+      <div class="intro-content">
+        <div style="font-size: 60px">🤍</div>
+        <h1>Дастан & Назима</h1>
+        <p>
+          Мы с большой радостью приглашаем Вас<br />разделить с нами самый
+          счастливый день нашей жизни.
+        </p>
+        <button class="intro-btn" onclick="openInvitation()">
+          Открыть приглашение
+        </button>
+      </div>
+    </div>
     <!-- =========================
        HERO
   ========================== -->
@@ -1261,11 +1336,8 @@
         <p class="small-text">Свадебное приглашение</p>
 
         <h1 class="names">Дастан & Назима</h1>
-
         <div class="heart">♡</div>
-
         <div class="date">03 сентября 2026</div>
-
         <p class="hero-description">
           Мы будем счастливы разделить этот особенный день вместе с вами
         </p>
@@ -1297,6 +1369,7 @@
           </p>
 
           <div class="signature">Дастан & Назима</div>
+          <img src="./assets/img1.png" class="logo" alt="logo" />
         </div>
       </div>
     </section>
@@ -1383,6 +1456,124 @@
         </div>
       </div>
     </section>
+
+    <section class="program">
+      <div class="container reveal">
+        <h2 class="section-title">Программа мероприятия</h2>
+        <div class="divider">♡</div>
+        <div
+          style="
+            max-width: 700px;
+            margin: auto;
+            font-family: &quot;Cormorant Garamond&quot;, serif;
+            font-size: 28px;
+            line-height: 2;
+            text-align: center;
+          "
+        >
+          <p><strong>16:00</strong> — Сбор гостей</p>
+          <p><strong>17:00</strong> — Торжественная часть</p>
+          <p><strong>18:00</strong> — Банкет</p>
+          <p><strong>22:00</strong> — Танцы</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="dresscode">
+      <div class="container reveal">
+        <h2 class="section-title">Dress Code</h2>
+        <p style="text-align: center; font-size: 20px">
+          Будем рады, если вы поддержите цветовую гамму нашего праздника.
+        </p>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            margin-top: 30px;
+          "
+        >
+          <div
+            style="
+              width: 42px;
+              height: 42px;
+              border-radius: 50%;
+              background: #ffffff;
+              border: 1px solid #ddd;
+            "
+          ></div>
+          <div
+            style="
+              width: 42px;
+              height: 42px;
+              border-radius: 50%;
+              background: #efe6d6;
+            "
+          ></div>
+          <div
+            style="
+              width: 42px;
+              height: 42px;
+              border-radius: 50%;
+              background: #c8b39c;
+            "
+          ></div>
+          <div
+            style="
+              width: 42px;
+              height: 42px;
+              border-radius: 50%;
+              background: #8d6e63;
+            "
+          ></div>
+          <div
+            style="
+              width: 42px;
+              height: 42px;
+              border-radius: 50%;
+              background: #d4af37;
+            "
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <button
+      id="musicBtn"
+      style="
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        padding: 12px 18px;
+        border: none;
+        border-radius: 30px;
+        background: #bd8547;
+        color: #fff;
+        cursor: pointer;
+        z-index: 9999;
+      "
+    >
+      🎵 Включить музыку
+    </button>
+    <audio id="bgMusic" loop>
+      <source
+        src="./music/Tom Rosenthal - Lights Are On.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+    <script>
+      const btn = document.getElementById("musicBtn");
+      const music = document.getElementById("bgMusic");
+      btn.onclick = () => {
+        if (music.paused) {
+          music.play();
+          btn.textContent = "⏸ Пауза";
+        } else {
+          music.pause();
+          btn.textContent = "🎵 Включить музыку";
+        }
+      };
+    </script>
 
     <!-- =========================
        RSVP / АНКЕТА ГОСТЯ
@@ -1496,6 +1687,27 @@
     <!-- =========================
        FOOTER
   ========================== -->
+
+    <section class="gallery">
+      <div class="container reveal">
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+          "
+        >
+          <img
+            src="./assets/kolca4.jpg"
+            style="
+              width: 100%;
+              border-radius: 24px;
+              box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+            "
+          />
+        </div>
+      </div>
+    </section>
 
     <footer>
       <div class="footer-content reveal">
@@ -1657,6 +1869,23 @@
         revealElements.forEach((element) => {
           element.classList.add("active");
         });
+      }
+    </script>
+    <script>
+      function createPetal() {
+        const p = document.createElement("div");
+        p.className = "petal";
+        p.textContent = ["🌸", "✨", "💕"][Math.floor(Math.random() * 3)];
+        p.style.left = Math.random() * 100 + "vw";
+        document.getElementById("intro-screen").appendChild(p);
+        setTimeout(() => p.remove(), 10000);
+      }
+      for (let i = 0; i < 15; i++) createPetal();
+      setInterval(createPetal, 500);
+      function openInvitation() {
+        document.getElementById("intro-screen").classList.add("hide");
+        //const m = document.getElementById("bgMusic");
+        if (m) m.play().catch(() => {});
       }
     </script>
   </body>
